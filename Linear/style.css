@@ -33,6 +33,19 @@ ul {
     max-width: 1140px;
     margin: auto;
 }
+button {
+    padding: 15px 30px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+button:hover {
+    background-color: #60916c;
+    cursor: pointer;
+    transition: var(--transitions);
+}
 /******************
 header
 ******************/
@@ -81,7 +94,48 @@ hgroup h5 {
     font-weight: 300;
     color: var(--white);
 }
-
+/******************
+intro
+******************/
+.intro {
+    padding: var(--padding);
+    text-align: center;
+}
+.intro h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+.intro a {
+    color: var(--secondary);
+}
+.intro hr {
+    border: none;
+    background-color: #ddd;
+    height: 1px;
+    margin: 50px auto;
+}
+.intro article {
+    display: flex;
+    justify-content: space-between;
+}
+.intro article div {
+    flex: 0 0 31%;
+}
+.intro i {
+    font-size: 5rem;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+.intro h3 {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+.intro p {
+    padding: 30px 0;
+    font-size: 1.1rem;
+    line-height: 2;
+}
 
 
 

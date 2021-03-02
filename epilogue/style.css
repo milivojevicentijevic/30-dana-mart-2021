@@ -4,6 +4,8 @@
     --logo: 'Pacifico', cursive;
     --fontSize: 16px;
     --white: #fff;
+    --bg: #f4f4f4;
+    --padding: 100px 0;
 }
 * {
     margin: 0;
@@ -13,6 +15,10 @@
 body {
     font-family: var(--fontFamily);
     font-size: var(--fontSize);
+}
+.container {
+    width: 80%;
+    margin: auto;
 }
 /*********************
 header

@@ -195,11 +195,13 @@ services
     padding: var(--pt);
     padding-bottom: 20px;
 }
+.services h4 {
+    padding-bottom: 100px;
+}
 .services article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
 }
 .services article .col {
     display: flex;
@@ -291,6 +293,7 @@ footer i:hover {
 footer ul {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 footer ul li {
     border-right: 1px solid var(--gray);

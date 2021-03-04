@@ -133,7 +133,7 @@ intro
 .intro article {
     flex: 0 0 45%;
 }
-.intro h4, .gallery h4 {
+.intro h4, .gallery h4, .services h4 {
     text-transform: uppercase;
     font-size: 2rem;
     color: var(--gray);
@@ -187,4 +187,35 @@ gallery
 .gallery .buttons button:last-child {
     background-color: var(--headings);
 }
-
+/****************
+services
+****************/
+.services {
+    padding: var(--py);
+}
+.services article {
+    display: flex;
+    flex-wrap: wrap;
+}
+.services article .col {
+    border: 1px solid red;
+    display: flex;
+    flex: 0 0 50%;
+}
+.services article img {
+    width: 100%;
+}
+.services article .col .text {
+    flex: 0 0 70%;
+}
+.services article .col .img {
+    flex: 0 0 30%;
+}
+.services article .col:nth-child(even) .text {
+    flex: 0 0 70%;
+    order: 2;
+}
+.services article .col:nth-child(even) .img {
+    flex: 0 0 30%;
+    order: 1;
+}

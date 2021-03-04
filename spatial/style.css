@@ -281,6 +281,9 @@ footer i {
     color: var(--gray);
     margin: 0 60px 60px 0;
 }
+footer a:last-child i {
+    margin: 0 0 60px 0;
+}
 footer i:hover {
     transition: var(--transition);
     color: var(--headings);
@@ -288,7 +291,6 @@ footer i:hover {
 footer ul {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 footer ul li {
     border-right: 1px solid var(--gray);
@@ -300,6 +302,7 @@ footer ul li:last-child {
 }
 footer ul li a {
     color: var(--gray);
+    text-decoration: none;
 }
 footer ul li a:hover {
     color: var(--text);

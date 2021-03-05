@@ -22,7 +22,7 @@ body {
     font-family: var(--fontFamily);
     color: var(--text);
     background-color: var(--accents);
-    padding: 0 20px 100px;
+    padding: 0 20px 50px 20px;
     font-size: var(--fontSize);
     line-height: 1.6;
     font-weight: 400;
@@ -111,6 +111,9 @@ services
 .services p {
     line-height: 1.8;
 }
+.services img {
+    width: 100%;
+}
 .services h3 {
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -130,6 +133,7 @@ blog
     display: flex;
     margin-top: 100px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .blog .container div {
     flex: 0 0 23%;
@@ -185,4 +189,39 @@ footer a:hover {
     text-decoration: none;
 }
 
-
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    header article {
+        flex-direction: column;
+    }
+    header .icons a {
+        margin: 10px;
+    }
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .services {
+        padding: 20px 0;
+    }
+    .services div {
+        flex: 0 0 100%;
+    }
+    .services h3 {
+        margin-top: 40px;
+    }
+    .blog {
+        padding: 20px 0;
+    }
+    .blog h2 {
+        font-size: 2.3rem;
+    }
+    .blog .container div {
+        flex: 0 0 100%;
+    }
+    button {
+        margin-bottom: 30px;
+    }
+}

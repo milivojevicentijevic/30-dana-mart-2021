@@ -171,3 +171,18 @@ button:hover {
     background-color: var(--primary);
     transition: var(--transition);
 }
+/***************
+footer
+***************/
+footer {
+    text-align: center;
+    padding-top: 50px;
+}
+footer a {
+    color: var(--primary);
+}
+footer a:hover {
+    text-decoration: none;
+}
+
+

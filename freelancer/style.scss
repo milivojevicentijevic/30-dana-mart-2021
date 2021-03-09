@@ -65,6 +65,9 @@ h2 {
         content: "";
     }
 }
+ul {
+    list-style: none;
+}
 /*********************
 aside
 *********************/
@@ -154,6 +157,56 @@ main
         }
         &::after {
             @include line;
+        }
+    }
+    footer {
+        padding-bottom: 50px;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            form {
+                flex: 0 0 68%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                input {
+                    flex: 0 0 48%;
+                    padding: 10px;
+                    background-color: $lightGray;
+                    border: none;
+                    margin-bottom: 30px;
+                }
+                textarea {
+                    flex: 0 0 100%;
+                    padding: 10px;
+                    background-color: $lightGray;
+                    border: none;
+                }
+                button {
+                    @include btn;
+                    background-color: $pink;
+                    border: 2px solid $pink;
+                    color: $white;
+                    &:hover {
+                        background-color: $green;
+                        border: 2px solid $green;
+                        color: $white;
+                    }
+                }
+            }
+            .contact {
+                flex: 0 0 28%;
+                ul {
+                    li {
+                        line-height: 2.5;
+                        font-size: 1.2rem;
+                        i {
+                            color: $pink;
+                        }
+                    }
+                }
+            }
         }
     }
 }

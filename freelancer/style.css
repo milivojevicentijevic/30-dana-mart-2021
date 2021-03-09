@@ -179,6 +179,7 @@ main
 
 .main .portfolio .row .col p {
   padding-bottom: 30px;
+  color: red;
 }
 
 .main .portfolio button {

@@ -83,6 +83,13 @@ aside {
     align-items: flex-end;
     text-align: right;
     padding-right: 60px;
+    @media(max-width: 768px) {
+        flex: 0 0 100%;
+        align-items: center;
+        padding-right: 0;
+        text-align: center;
+        height: 80vh;
+    }
     img {
         width: 40%;
         border-radius: 50%;
@@ -117,6 +124,10 @@ main
     padding: 40px;
     overflow: scroll;
     height: 100vh;
+    @media(max-width: 768px) {
+        flex: 0 0 100%;
+        height: auto;
+    }   
     .about {
         button {
             @include btn;
@@ -133,6 +144,9 @@ main
             margin-top: 40px;
             .col {
                 flex: 0 0 48%;
+                @media(max-width: 768px) {
+                    flex: 0 0 100%;
+                }
                 img {
                     width: 100%;
                     &:hover {
@@ -165,11 +179,15 @@ main
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
+            flex-wrap: wrap;
             form {
                 flex: 0 0 68%;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                @media(max-width: 768px) {
+                    flex: 0 0 100%;
+                }
                 input {
                     flex: 0 0 48%;
                     padding: 10px;
@@ -197,6 +215,10 @@ main
             }
             .contact {
                 flex: 0 0 28%;
+                @media(max-width: 768px) {
+                    flex: 0 0 100%;
+                    margin-top: 50px;
+                }
                 ul {
                     li {
                         line-height: 2.5;
